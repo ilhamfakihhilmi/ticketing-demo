@@ -31,7 +31,7 @@
           class="mt-6 flex items-center gap-2 rounded-lg bg-[#3C9EF8] px-6 py-2 font-semibold text-white transition hover:bg-[#3485C5]"
           @click="goToDemo"
         >
-          <i class="pi pi-play"></i>
+          <i class="pi pi-play-circle"></i>
           Live Demo
         </button>
       </div>
