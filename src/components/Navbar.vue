@@ -4,7 +4,7 @@
     <div class="menu" :class="{ active: isMenuActive }">
       <router-link to="/">Home</router-link>
       <router-link to="#fitur-section">Fitur</router-link>
-      <router-link to="#harga-section">Kelebihan</router-link>
+      <router-link to="#harga-section">Keunggulan</router-link>
       <router-link to="#contact-section">Kontak</router-link>
       <router-link to="#blog-section">Blog</router-link>
     </div>
