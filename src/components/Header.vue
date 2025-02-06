@@ -43,13 +43,15 @@
           <li class="pi pi-chart-bar mr-1"></li>
           Analisis Data Canggih
         </h2>
-        <p class="text-neutral-600">
+        <p class="text-neutral-800">
           Gunakan data yang dihasilkan untuk membuat keputusan yang lebih baik
           dan strategis untuk bisnis Anda.
         </p>
       </div>
     </div>
   </div>
+
+  <!-- header kedua -->
 </template>
 
 <script>

@@ -35,6 +35,78 @@
       </p>
     </div>
   </div>
+
+  <div class="flex min-h-screen items-center justify-center px-6">
+    <div
+      class="flex w-full max-w-5xl rounded-3xl bg-white p-10 shadow-xl transition-transform duration-300 hover:scale-105"
+    >
+      <!-- Bagian Kiri: List -->
+      <div class="flex w-1/2 flex-col justify-center">
+        <h2
+          class="mb-6 cursor-pointer text-3xl font-bold text-gray-800 transition-colors duration-300 hover:text-blue-600"
+        >
+          Kelebihan Aplikasi Ticketing Yang Kami Tawarkan
+        </h2>
+
+        <ul class="space-y-3 text-base text-gray-700">
+          <li
+            class="flex cursor-pointer items-center transition-transform duration-300 hover:scale-105"
+          >
+            <i class="pi pi-check-circle mr-3 text-xl text-blue-500"></i>
+            <span class="font-medium"
+              >Pencatatan Masalah yang Efisien: Semua pengaduan tersimpan dalam
+              satu sistem yang terorganisir.</span
+            >
+          </li>
+          <li
+            class="flex cursor-pointer items-center transition-transform duration-300 hover:scale-105"
+          >
+            <i class="pi pi-check-circle mr-3 text-xl text-blue-500"></i>
+            <span class="font-medium"
+              >Akses Mudah Kapan Saja: Pengguna dapat mengajukan pengaduan dari
+              mana saja, kapan saja.</span
+            >
+          </li>
+          <li
+            class="flex cursor-pointer items-center transition-transform duration-300 hover:scale-105"
+          >
+            <i class="pi pi-check-circle mr-3 text-xl text-blue-500"></i>
+            <span class="font-medium"
+              >Tindak Lanjut Jelas dan Cepat: Pengguna menerima pembaruan status
+              untuk setiap pengaduan yang diajukan.</span
+            >
+          </li>
+          <li
+            class="flex cursor-pointer items-center transition-transform duration-300 hover:scale-105"
+          >
+            <i class="pi pi-check-circle mr-3 text-xl text-blue-500"></i>
+            <span class="font-medium"
+              >Laporan Analitis untuk Tren: Analisis data membantu memahami pola
+              pengaduan dan meningkatkan layanan.</span
+            >
+          </li>
+          <li
+            class="flex cursor-pointer items-center transition-transform duration-300 hover:scale-105"
+          >
+            <i class="pi pi-check-circle mr-3 text-xl text-blue-500"></i>
+            <span class="font-medium"
+              >Dukungan Pelanggan Responsif: Tim dukungan siap membantu
+              menyelesaikan masalah dengan cepat dan efisien.</span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Bagian Kanan: Gambar -->
+      <div class="flex w-1/2 items-center justify-center">
+        <img
+          src="@/assets/images/sss.png"
+          alt="Contact Image"
+          class="h-72 w-full max-w-screen-xl cursor-pointer rounded-lg object-cover transition-opacity duration-500 ease-in-out hover:opacity-75"
+        />
+      </div>
+    </div>
+  </div>
 </template>
 <script setup>
 import { ref, onMounted } from "vue";

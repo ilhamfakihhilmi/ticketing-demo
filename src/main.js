@@ -3,8 +3,8 @@ import "./assets/main.css";
 import PrimeVue from "primevue/config";
 import Aura from "@primevue/themes/aura";
 import "primeicons/primeicons.css";
-import '@fortawesome/fontawesome-free/css/all.css';
-
+import "@fortawesome/fontawesome-free/css/all.css";
+import "@fortawesome/fontawesome-free/js/all.js";
 
 import { createApp } from "vue";
 import { createPinia } from "pinia";
