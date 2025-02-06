@@ -1,13 +1,13 @@
 import "./assets/main.css";
 
-import PrimeVue from "primevue/config";
-import Aura from "@primevue/themes/aura";
-import "primeicons/primeicons.css";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "@fortawesome/fontawesome-free/js/all.js";
+import Aura from "@primevue/themes/aura";
+import "primeicons/primeicons.css";
+import PrimeVue from "primevue/config";
 
-import { createApp } from "vue";
 import { createPinia } from "pinia";
+import { createApp } from "vue";
 
 import App from "./App.vue";
 import router from "./router";
