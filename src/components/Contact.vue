@@ -13,18 +13,21 @@
         <p class="mt-4 text-gray-700">
           <i class="fas fa-envelope text-blue-500"></i>
           <a href="mailto:support@example.com" class="text-blue-500">
-            support@example.com </a
-          >.
+            punyadev30@gmail.com
+          </a>
         </p>
-        <p class="mt-4 text-gray-700">
+        <!-- <p class="mt-4 text-gray-700">
           <i class="fas fa-phone-alt text-blue-500"></i> +62 123 456 7890
-        </p>
+        </p> -->
         <div class="mt-6">
-          <button
-            class="rounded-lg bg-blue-500 px-4 py-2 text-white shadow-lg hover:bg-blue-700"
-          >
-            Hubungi Sekarang
-          </button>
+          <a href="https://wa.me/your_phone_number" target="_blank">
+            <button
+              class="flex items-center rounded-lg bg-blue-500 px-4 py-2 text-white shadow-lg hover:bg-blue-700"
+            >
+              <i class="fas fa-phone-alt mr-2"></i>
+              Hubungi Sekarang
+            </button>
+          </a>
         </div>
       </div>
       <div class="ml-8 hidden h-96 w-full max-w-md md:block">
@@ -38,21 +41,7 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from "vue";
-
-const name = ref("");
-const email = ref("");
-const message = ref("");
-
-const submitForm = () => {
-  // Handle form submission
-  console.log("Name:", name.value);
-  console.log("Email:", email.value);
-  console.log("Message:", message.value);
-  alert("Message sent!");
-};
-</script>
+<script setup></script>
 
 <style scoped>
 /* Tidak perlu menambahkan gaya khusus karena menggunakan kelas Tailwind */
