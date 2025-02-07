@@ -20,7 +20,7 @@
           <i class="fas fa-phone-alt text-blue-500"></i> +62 123 456 7890
         </p> -->
         <div class="mt-6">
-          <a href="https://wa.me/your_phone_number" target="_blank">
+          <a href="https://wa.me/+628998770102" target="_blank">
             <button
               class="flex items-center rounded-lg bg-blue-500 px-4 py-2 text-white shadow-lg hover:bg-blue-700"
             >
