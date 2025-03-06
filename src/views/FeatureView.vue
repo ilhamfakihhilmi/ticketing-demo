@@ -63,7 +63,7 @@ const features1 = [
       "Otomatisasi Efektif",
       "Keamanan & Privasi Terjamin",
     ],
-    buttonName: "Pusat Bantuang",
+    buttonName: "Pusat Bantuan",
     description:
       "Tingkatkan kepuasan pelanggan dengan chatbot AI yang cerdas, responsif, dan mampu beradaptasi dengan kebutuhan bisnis Anda.",
     image: feature1,

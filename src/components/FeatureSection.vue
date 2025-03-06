@@ -70,6 +70,7 @@
 
       <button
         class="mt-6 w-full rounded-lg bg-blue-500 p-3 font-semibold text-white transition duration-300 hover:bg-blue-600"
+        onclick="window.open('https://wa.me/628998770102', '_blank')"
       >
         Hubungi Kami
       </button>
