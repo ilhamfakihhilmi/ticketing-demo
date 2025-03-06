@@ -2,11 +2,13 @@
   <nav class="navbar">
     <img src="@/assets/logo.svg" alt="Logo Kiri" class="logo left-logo" />
     <div class="menu" :class="{ active: isMenuActive }">
-      <router-link to="/">Home</router-link>
-      <router-link to="#fitur-section">Fitur</router-link>
-      <router-link to="#harga-section">Keunggulan</router-link>
-      <router-link to="#contact-section">Kontak</router-link>
-      <router-link to="#blog-section">Blog</router-link>
+      <router-link to="/" exact-active-class="active">Home</router-link>
+      <router-link to="/feature" active-class="active">Fitur</router-link>
+      <router-link to="/keunggulan" active-class="active"
+        >Keunggulan</router-link
+      >
+      <router-link to="/kontak" active-class="active">Kontak</router-link>
+      <a href="http://147.93.105.148:8040/" target="_blank">Blog</a>
     </div>
     <button class="menu-toggle" @click="toggleMenu">
       <span class="bar"></span>

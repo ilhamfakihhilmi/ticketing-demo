@@ -1,42 +1,45 @@
 <template>
   <div id="app">
     <Navbar />
-    <Banner />
-    <div id="fitur-section">
+    <router-view />
+
+    <!-- Tampilkan hanya saat di halaman home -->
+    <div v-if="$route.path === '/'" id="fitur-section">
       <Header />
     </div>
-    <div id="harga-section">
+    <div v-if="$route.path === '/'" id="fitur-section">
+      <IntroAwal />
+    </div>
+    <div v-if="$route.path === '/'" id="harga-section">
       <Content />
     </div>
-
-    <div id="contact-section">
+    <div v-if="$route.path === '/'" id="contact-section">
       <Contact />
     </div>
-    <div id="blog-section">
+    <div v-if="$route.path === '/'" id="blog-section">
       <Blog />
     </div>
   </div>
 </template>
 
 <script>
-import Banner from "./components/Banner.vue";
 import Contact from "./components/Contact.vue";
 import Blog from "./components/Footer.vue";
-import Header from "./components/Header.vue";
+import Home from "./components/Home.vue";
+import IntroAwal from "./components/IntroAwal.vue";
+
 import Navbar from "./components/Navbar.vue";
-import PorductCrousel from "./components/ProoductCorousel.vue";
+import ProductCarousel from "./components/ProductCarousel.vue"; // Perbaikan nama
 
 export default {
   name: "App",
   components: {
     Navbar,
-    Banner,
-    Header,
-    PorductCrousel,
+    Home,
+    IntroAwal,
+    ProductCarousel, // Perbaikan nama
     Contact,
     Blog,
   },
 };
 </script>
-
-<style></style>

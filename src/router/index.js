@@ -1,16 +1,19 @@
+import Contact from "@/components/Contact.vue";
+import { default as Blog, default as Harga } from "@/components/Footer.vue";
+import Home from "@/components/Home.vue";
+import LandingPage from "@/views/LandingPage.vue";
+import FeatureView from "@/views/FeatureView.vue";
+import Keunggulan from "@/views/Keunggulan.vue";
+import Kontak from "@/views/Kontak.vue";
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "../components/Banner.vue";
-import Fitur from "../components/Header.vue";
-import Harga from "../components/Footer.vue";
-import Contact from "../components/Contact.vue";
-import Blog from "../components/Footer.vue";
 
 const routes = [
   { path: "/", component: Home },
-  { path: "/fitur", component: Fitur },
-  { path: "/harga", component: Harga },
-  { path: "/contact", component: Contact },
+  { path: "/keunggulan", component: Keunggulan },
+  { path: "/kontak", component: Contact },
   { path: "/blog", component: Blog },
+  { path: "/feature", component: FeatureView },
+  { path: "/landingPage", component: LandingPage }, // Pastikan ini ada// Gunakan '/feature/:id' bukan '/fitur/:id'
 ];
 
 const router = createRouter({
