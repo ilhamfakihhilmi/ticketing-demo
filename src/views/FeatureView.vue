@@ -9,8 +9,8 @@
 
 <script setup>
 //image chatbot
-import feature1_2 from "@/assets/images/1chatbot/feature1.png";
 import feature1 from "@/assets/images/1chatbot/feature1-2.png";
+import feature1_2 from "@/assets/images/1chatbot/feature1.png";
 
 //image dashboard
 import feature2_2 from "@/assets/images/2dashboard/feature2-2.png";
@@ -24,7 +24,6 @@ import feature3 from "@/assets/images/3catatAktivitas/feature3.png";
 
 // Pemantauan Tiket
 import feature4_2 from "@/assets/images/4pemantauanTiket/feature4-2.png";
-import feature4_3 from "@/assets/images/4pemantauanTiket/feature4-3.png";
 import feature4_4 from "@/assets/images/4pemantauanTiket/feature4-4.png";
 import feature4 from "@/assets/images/4pemantauanTiket/feature4.png";
 
@@ -75,29 +74,26 @@ const features2 = [
   {
     title: "Dashboard Monitoring",
     subTitles: [
-      "Data Real-time",
-      "Antarmuka Interaktif",
-      "Customizable Widgets",
-      "Integrasi dengan Sistem Lain",
-      "Notifikasi Otomatis",
+      "Data Real-time: Pantau informasi terkini secara instan untuk pengambilan keputusan yang lebih cepat dan akurat.",
+      "Antarmuka Interaktif: Desain simpel dan mudah digunakan, cocok untuk semua tingkat pengguna.",
+      "Widget Customizable: Sesuaikan tampilan dashboard sesuai kebutuhan bisnis Anda dengan widget yang fleksibel.",
+
+      "Notifikasi Otomatis: Dapatkan pemberitahuan real-time untuk setiap aktivitas penting, meminimalkan risiko dan meningkatkan respons.",
     ],
-    buttonName: "Lihat Dashboard",
+    buttonName: "Insights Harian",
     description:
-      "Pantau semua aktivitas dan data penting dalam satu tempat dengan dashboard kami.",
+      "Tingkatkan efisiensi dan kontrol bisnis Anda dengan dashboard monitoring kami. Solusi lengkap untuk memantau aktivitas dan data penting dalam satu tempat.",
     image: feature2,
   },
   {
-    title: "Dashboard Analytics",
+    title: "Analisis Akumulasi Tiket",
     subTitles: [
-      "Visualisasi Data Menarik",
-      "Laporan Otomatis",
-      "Export Data Mudah",
-      "Keamanan Data Terjamin",
-      "Dukungan Multi-perangkat",
+      "Visualisasi Data Tiket yang Interaktif",
+      "Keamanan Data Tiket Terjamin",
     ],
-    buttonName: "Analisis Data",
+    buttonName: "Akumulasi Tiket",
     description:
-      "Dapatkan insight mendalam dari data Anda dengan fitur analisis canggih.",
+      "Dapatkan insight mendalam tentang akumulasi tiket Anda dengan fitur analisis canggih yang membantu Anda melacak, menganalisis, dan mengoptimalkan manajemen tiket.",
     image: feature2_2,
   },
 ];
@@ -105,35 +101,34 @@ const features2 = [
 // Data untuk Fitur 3: Catat Aktivitas Pekerja
 const features3 = [
   {
-    title: "Catat Aktivitas Harian",
+    title: "Mendata Kehadiran Petugas",
     subTitles: [
-      "Input Data Cepat",
-      "Pelaporan Real-time",
-      "Notifikasi Pengingat",
-      "Integrasi dengan Kalender",
-      "Keamanan Data Terjamin",
+      "Input Data Cepat dan Akurat",
+      "Pelaporan Kehadiran Real-time",
+      "Notifikasi Pengingat Absensi",
+      "Integrasi dengan Jadwal Kerja",
+      "Keamanan Data Absensi Terjamin",
     ],
-    buttonName: "Catat Sekarang",
+    buttonName: "Absensi Petugas",
     description:
-      "Mencatat aktivitas pekerja menjadi lebih mudah dan terorganisir.",
+      "Memudahkan pencatatan dan pengelolaan kehadiran petugas secara terorganisir dan efisien.",
     image: feature3,
   },
   {
-    title: "Analisis Aktivitas",
+    title: "Rekap Kegiatan Harian",
     subTitles: [
-      "Visualisasi Data",
-      "Laporan Bulanan",
-      "Identifikasi Masalah",
-      "Optimasi Proses",
-      "Dukungan Multi-perangkat",
+      "Pemantauan Aktivitas Harian",
+      "Evaluasi Kinerja",
+      "Pelacakan Waktu",
+      "Peningkatan Produktivitas",
     ],
-    buttonName: "Lihat Laporan",
+    buttonName: "Rekap Harian",
     description:
-      "Analisis aktivitas pekerja untuk meningkatkan produktivitas dan efisiensi.",
+      "Pantau dan analisis kegiatan harian untuk meningkatkan efisiensi dan kinerja tim.",
     image: feature3_2,
   },
   {
-    title: "Analisis Aktivitas",
+    title: "Monitoring Kehadiran Petugas",
     subTitles: [
       "Visualisasi Data",
       "Laporan Bulanan",
@@ -141,23 +136,22 @@ const features3 = [
       "Optimasi Proses",
       "Dukungan Multi-perangkat",
     ],
-    buttonName: "Lihat Laporan2",
+    buttonName: "Preview Absensi Harian",
     description:
       "Analisis aktivitas pekerja untuk meningkatkan produktivitas dan efisiensi.",
     image: feature3_3,
   },
   {
-    title: "Analisis Aktivitas",
+    title: "Rekap Kegiatan Bulanan",
     subTitles: [
-      "Visualisasi Data",
-      "Laporan Bulanan",
-      "Identifikasi Masalah",
-      "Optimasi Proses",
-      "Dukungan Multi-perangkat",
+      "Visualisasi Data Bulanan",
+      "Laporan Aktivitas Bulanan",
+      "Identifikasi Masalah Bulanan",
+      "Optimasi Proses Bulanan",
     ],
-    buttonName: "Lihat Laporan3",
+    buttonName: "Rekap Bulanan",
     description:
-      "Analisis aktivitas pekerja untuk meningkatkan produktivitas dan efisiensi.",
+      "Analisis dan rekap aktivitas pekerja bulanan untuk meningkatkan produktivitas dan efisiensi.",
     image: feature3_4,
   },
 ];
@@ -179,45 +173,32 @@ const features4 = [
     image: feature4,
   },
   {
-    title: "Analisis Tiket",
+    title: "Riwayat Aktivitas Tiket",
     subTitles: [
-      "Laporan Performa Tiket",
-      "Identifikasi Masalah Berulang",
-      "Optimasi Proses",
-      "Export Data Mudah",
-      "Dukungan Multi-perangkat",
+      "Analisis Riwayat Tiket",
+      "Pelacakan Status Tiket",
+      "Evaluasi Waktu Tanggapan",
+      "Identifikasi Tren Masalah",
+      "Riwayat Interaksi Tiket",
     ],
-    buttonName: "Lihat Analisis",
+    buttonName: "Lihat Riwayat Tiket",
     description:
-      "Dapatkan insight dari data tiket untuk meningkatkan layanan pelanggan.",
+      "Akses riwayat lengkap tiket untuk melacak perkembangan dan meningkatkan efisiensi layanan tiketing.",
     image: feature4_2,
   },
+
   {
-    title: "Pemantauan Tiket Real-time",
+    title: "Notifikasi Tiket Otomatis",
     subTitles: [
-      "Pelacakan Status Tiket",
-      "Notifikasi Otomatis",
-      "Integrasi dengan Sistem Lain",
-      "Antarmuka Mudah Digunakan",
-      "Keamanan Data Terjamin",
+      "Pemberitahuan Tiket Real-time",
+      "Pengingat Otomatis untuk Tiket Tertunda",
+      "Prioritaskan Tiket Berdasarkan Urgensi",
+      "Integrasi dengan Sistem Layanan Pelanggan",
+      "Notifikasi via Email & Aplikasi",
     ],
-    buttonName: "Pantau Tiket",
+    buttonName: "Notifikasi Tiket",
     description:
-      "Pantau status tiket secara real-time dan pastikan masalah terselesaikan dengan cepat.",
-    image: feature4_3,
-  },
-  {
-    title: "Analisis Tiket",
-    subTitles: [
-      "Laporan Performa Tiket",
-      "Identifikasi Masalah Berulang",
-      "Optimasi Proses",
-      "Export Data Mudah",
-      "Dukungan Multi-perangkat",
-    ],
-    buttonName: "Lihat Analisis",
-    description:
-      "Dapatkan insight dari data tiket untuk meningkatkan layanan pelanggan.",
+      "Terima notifikasi otomatis untuk tiket layanan pelanggan, pantau status tiket, dan tangani masalah dengan lebih efisien.",
     image: feature4_4,
   },
 ];
@@ -233,23 +214,22 @@ const features5 = [
       "Integrasi dengan Sistem Lain",
       "Keamanan Data Terjamin",
     ],
-    buttonName: "Lihat Laporan",
+    buttonName: "Laporan Harian",
     description:
       "Dapatkan laporan tiket harian secara otomatis dan terperinci.",
     image: feature5,
   },
   {
-    title: "Laporan Tiket Bulanan",
+    title: "Preview Laporan Tiketing",
     subTitles: [
-      "Analisis Tren Bulanan",
-      "Identifikasi Masalah",
-      "Optimasi Proses",
-      "Dukungan Multi-perangkat",
-      "Notifikasi Otomatis",
+      "Analisis Tren Tiket Bulanan",
+      "Identifikasi Puncak Permintaan",
+      "Evaluasi Waktu Respon",
+      "Insight untuk Peningkatan Layanan",
     ],
-    buttonName: "Analisis Laporan",
+    buttonName: "Preview Laporan",
     description:
-      "Analisis laporan tiket bulanan untuk meningkatkan kualitas layanan.",
+      "Tinjau laporan tiket bulanan untuk mendapatkan insight mendalam tentang kinerja layanan dan area perbaikan.",
     image: feature5_2,
   },
 ];
@@ -263,24 +243,24 @@ const features6 = [
       "Dukungan Teknis Profesional",
       "Integrasi dengan Sistem Lain",
       "Keamanan Data Terjamin",
-      "Dukungan Multi-bahasa",
     ],
-    buttonName: "Cari Solusi",
-    description: "Dapatkan solusi teknis cepat dan tepat untuk masalah Anda.",
+    buttonName: "Solusi Teknis",
+    description:
+      "Temukan solusi teknis yang cepat dan efisien untuk kebutuhan bisnis Anda. Tim ahli kami siap membantu 24/7 dengan dukungan profesional dan integrasi sistem yang mulus.",
     image: feature6,
   },
   {
-    title: "Database Solusi Teknis",
+    title: "Preview Solusi Teknis",
     subTitles: [
-      "Pencarian Cepat",
-      "Update Rutin",
-      "Dokumentasi Lengkap",
-      "Dukungan Multi-perangkat",
-      "Integrasi dengan Chatbot",
+      "Pencarian Cepat dan Akurat",
+      "Pembaruan Rutin untuk Solusi Terkini",
+      "Dokumentasi Terstruktur dan Mudah Dipahami",
+      "Kompatibel dengan Berbagai Perangkat",
+      "Integrasi Lancar dengan Chatbot AI",
     ],
-    buttonName: "Cari di Database",
+    buttonName: "Preview Solusi",
     description:
-      "Akses database solusi teknis untuk menemukan jawaban atas masalah Anda.",
+      "Jelajahi database solusi teknis kami untuk menemukan jawaban cepat dan tepat atas masalah teknis Anda.",
     image: feature6_2,
   },
 ];

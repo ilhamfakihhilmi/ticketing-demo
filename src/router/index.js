@@ -10,7 +10,7 @@ import { createRouter, createWebHistory } from "vue-router";
 const routes = [
   { path: "/", component: Home },
   { path: "/keunggulan", component: Keunggulan },
-  { path: "/kontak", component: Contact },
+  { path: "/kontak", component: Kontak },
   { path: "/blog", component: Blog },
   { path: "/feature", component: FeatureView },
   { path: "/landingPage", component: LandingPage }, // Pastikan ini ada// Gunakan '/feature/:id' bukan '/fitur/:id'

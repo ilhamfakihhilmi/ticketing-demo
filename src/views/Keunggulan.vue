@@ -4,6 +4,17 @@ import { ref } from "vue";
 
 const features = ref([
   {
+    title: "Chatbot Cerdas untuk Bisnis Anda",
+    description:
+      "Respon Cepat 24/7 - Siap membantu pelanggan kapan saja tanpa menunggu",
+    icon: "🤖",
+  },
+  {
+    title: "Dashboard Pemantauan",
+    description: "Dashboard interaktif untuk memantau performa dan aktivitas.",
+    icon: "📊",
+  },
+  {
     title: "Cepat & Efisien",
     description: "Memproses tiket dengan cepat dan responsif.",
     icon: "🚀",
@@ -21,7 +32,7 @@ const features = ref([
   {
     title: "Analitik & Laporan",
     description: "Lihat performa dengan laporan terperinci.",
-    icon: "📊",
+    icon: "📈",
   },
 ]);
 </script>
@@ -51,6 +62,7 @@ const features = ref([
 
     <Button
       class="fade-in mt-8 rounded-xl bg-blue-600 px-6 py-3 text-white transition hover:bg-blue-700"
+      onclick="window.open('https://wa.me/628998770102', '_blank')"
     >
       <CheckCircleIcon class="mr-2 inline-block h-5 w-5" /> Mulai Sekarang
     </Button>

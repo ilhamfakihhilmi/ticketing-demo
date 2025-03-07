@@ -1,15 +1,17 @@
 <template>
-  <div class="flex min-h-screen flex-col items-center justify-center px-6">
+  <div
+    class="flex min-h-screen flex-col items-center justify-center px-4 sm:px-6"
+  >
     <div
-      class="max-w-8xl relative flex w-full flex-col items-center rounded-3xl bg-white p-14 shadow-xl"
+      class="max-w-8xl relative flex w-full flex-col items-center rounded-3xl bg-white p-6 shadow-xl sm:p-14"
     >
-      <div class="flex w-full">
+      <div class="flex w-full flex-col lg:flex-row">
         <!-- Konten Kiri (Daftar Fitur) -->
-        <div class="flex w-1/2 flex-col justify-center">
-          <h2 class="mb-6 mt-3 text-4xl font-bold text-gray-800">
+        <div class="flex w-full flex-col justify-center lg:w-1/2">
+          <h2 class="mb-6 mt-3 text-3xl font-bold text-gray-800 sm:text-4xl">
             {{ currentFeature.title }}
           </h2>
-          <div class="mt-0 flex space-x-4">
+          <div class="mt-0 flex flex-wrap gap-2">
             <button
               v-for="(feature, index) in features"
               :key="index"
@@ -17,14 +19,14 @@
               class="rounded-lg px-4 py-2 text-black transition duration-300"
               :class="{
                 'bg-[#ffc547] shadow-lg': currentFeatureIndex === index,
-                'bg-[#e3c88c] hover:bg-[#dab66b]':
+                'bg-[#fff4dd] hover:bg-[#ffe1b4]':
                   currentFeatureIndex !== index,
               }"
             >
               {{ feature.buttonName }}
             </button>
           </div>
-          <ul class="mb-10 mt-5 space-y-4 text-lg text-gray-700">
+          <ul class="mb-10 mt-5 space-y-4 text-base text-gray-700 sm:text-lg">
             <li
               class="flex items-center"
               v-for="(subTitle, index) in currentFeature.subTitles"
@@ -37,7 +39,7 @@
         </div>
 
         <!-- Konten Kanan (Gambar dan Deskripsi Fitur) -->
-        <div class="relative w-1/2 overflow-hidden">
+        <div class="relative mt-6 w-full overflow-hidden lg:mt-0 lg:w-1/2">
           <button
             @click="prevFeature"
             class="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-blue-200 p-3 text-white transition duration-300 hover:bg-blue-600"

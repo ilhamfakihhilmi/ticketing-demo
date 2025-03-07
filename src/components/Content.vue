@@ -1,20 +1,22 @@
 <template>
-  <div class="flex h-screen w-full">
+  <div class="flex h-screen w-full flex-col md:flex-row">
     <!-- Kartu Kiri (Teks Intro) -->
-    <div class="flex w-1/2 flex-col items-start justify-center bg-white p-8">
+    <div
+      class="flex w-full flex-col items-start justify-center bg-white p-8 md:w-1/2"
+    >
       <h1
-        class="text-left text-xl font-bold text-gray-700 md:mb-1 md:mt-5 md:text-5xl"
+        class="text-left text-3xl font-bold text-gray-700 md:mb-1 md:mt-5 md:text-5xl"
       >
         Revolusi Pengelolaan Tiket Anda
       </h1>
-      <p class="mt-4 text-left text-lg text-gray-700 md:mb-5 md:text-base">
+      <p class="mt-4 text-left text-base text-gray-700 md:mb-5 md:text-lg">
         Sistem Pelaporan Tiket yang dirancang untuk mempercepat prosedur,
         meningkatkan visibilitas, dan menyediakan data yang terpercaya.
       </p>
     </div>
 
     <!-- Kartu Kanan (Carousel Gambar) -->
-    <div class="relative h-full w-full overflow-hidden">
+    <div class="md:full relative h-64 w-full overflow-hidden md:h-full">
       <!-- Gambar Carousel -->
       <div
         class="absolute inset-0 transition-opacity"
@@ -38,12 +40,12 @@
 
   <div class="flex min-h-screen items-center justify-center px-6">
     <div
-      class="flex w-full max-w-5xl rounded-3xl bg-white p-10 shadow-xl transition-transform duration-300 hover:scale-105"
+      class="flex w-full max-w-5xl flex-col rounded-3xl bg-white p-6 shadow-xl transition-transform duration-300 hover:scale-105 md:flex-row md:p-10"
     >
       <!-- Bagian Kiri: List -->
-      <div class="flex w-1/2 flex-col justify-center">
+      <div class="flex w-full flex-col justify-center md:w-1/2">
         <h2
-          class="mb-6 cursor-pointer text-3xl font-bold text-gray-800 transition-colors duration-300 hover:text-blue-600"
+          class="mb-6 cursor-pointer text-2xl font-bold text-gray-800 transition-colors duration-300 hover:text-blue-600 md:text-3xl"
         >
           Kelebihan Aplikasi Ticketing Yang Kami Tawarkan
         </h2>
@@ -98,16 +100,19 @@
       </div>
 
       <!-- Bagian Kanan: Gambar -->
-      <div class="flex w-1/2 items-center justify-center">
+      <div
+        class="mt-6 flex w-full items-center justify-center md:mt-0 md:w-1/2"
+      >
         <img
           src="@/assets/images/sss.png"
           alt="Contact Image"
-          class="h-72 w-full max-w-screen-xl cursor-pointer rounded-lg object-cover transition-opacity duration-500 ease-in-out hover:opacity-75"
+          class="h-48 w-full max-w-screen-xl cursor-pointer rounded-lg object-cover transition-opacity duration-500 ease-in-out hover:opacity-75 md:h-72"
         />
       </div>
     </div>
   </div>
 </template>
+
 <script setup>
 import { ref, onMounted } from "vue";
 import image1 from "@/assets/images/image-cticket.png";
@@ -144,6 +149,7 @@ onMounted(() => {
   setInterval(changeImage, 6000); // Ganti gambar setiap 6 detik
 });
 </script>
+
 <style scoped>
 body {
   margin: 0;
@@ -179,5 +185,40 @@ body {
   transition:
     opacity 0.5s ease-in-out,
     transform 0.5s ease-in-out;
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 768px) {
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .h-64 {
+    height: 16rem;
+  }
+
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .p-8 {
+    padding: 2rem;
+  }
+
+  .p-6 {
+    padding: 1.5rem;
+  }
+
+  .h-48 {
+    height: 12rem;
+  }
 }
 </style>
