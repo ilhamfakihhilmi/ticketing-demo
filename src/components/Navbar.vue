@@ -8,7 +8,7 @@
         >Keunggulan</router-link
       >
       <router-link to="/kontak" active-class="active">Kontak</router-link>
-      <a href="http://147.93.105.148:8040/" target="_blank">Blog</a>
+      <a href="http://82.25.108.179:8080/" target="_blank">Blog</a>
     </div>
     <button class="menu-toggle" @click="toggleMenu">
       <span class="bar"></span>
